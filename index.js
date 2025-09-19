@@ -15,7 +15,7 @@ app.use(cors({
 app.use(express.json());
 
 const PORT = process.env.PORT || 4000;
-const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017/clinique_paie';
+const MONGODB_URI = process.env.MONGODB_URI || 'mongodb+srv://lameck:admin2025@cluster0.hibdcpo.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0';
 
 // Connexion MongoDB
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true })
